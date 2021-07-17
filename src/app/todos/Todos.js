@@ -8,13 +8,16 @@ const Todos = () => {
 		setTodoItems([todo, ...todoItems]);
 	};
 
+	const handleDeleteTodo = (todoIndex) => {
+		setTodoItems(todoItems.filter((todo, index) => index !== todoIndex));
+	};
 	return (
 		<section className='pt-20 w-3/4 mx-auto'>
 			<h1 className='text-3xl text-center my-4 font-medium'>
 				Simple Todos App
 			</h1>
 			<TodosInput onSubmit={handleSubmit} />
-			<TodosList todos={todoItems} />
+			<TodosList todos={todoItems} onDelete={handleDeleteTodo} />
 		</section>
 	);
 };
