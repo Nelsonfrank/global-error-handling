@@ -12,7 +12,7 @@ const Todos = () => {
 		setTodoItems(todoItems.filter((todo, index) => index !== todoIndex));
 	};
 	return (
-		<section className='pt-20 w-3/4 mx-auto'>
+		<section className='pt-20 w-11/12 md:w-3/4 mx-auto'>
 			<h1 className='text-3xl text-center my-4 font-medium'>
 				Simple Todos App
 			</h1>

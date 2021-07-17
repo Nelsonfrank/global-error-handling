@@ -35,7 +35,7 @@ const TodoItem = ({ itemNo, todo, onDelete }) => {
 
 const TodosList = ({ todos, onDelete }) => {
 	return (
-		<section className='flex flex-col items-start w-3/4 mx-auto mt-12 '>
+		<section className='flex flex-col items-start w-full md:w-3/4 mx-auto mt-12 '>
 			{todos.map((todo, index) => (
 				<TodoItem todo={todo} itemNo={index} onDelete={onDelete} />
 			))}
