@@ -25,7 +25,7 @@ const TodosInput = ({ onSubmit }) => {
 				value={todo}
 				className='w-full border border-black py-4 px-3 text-xl mb-8 rounded focus:outline-none'
 			/>
-			<button className='border rounded py-3 px-1 text-xl w-1/4 focus:bg-blue-300 hover:bg-blue-100'>
+			<button className='border border-black rounded py-3 px-1 text-xl w-1/4 focus:bg-blue-300 hover:bg-blue-100'>
 				Add
 			</button>
 		</form>
